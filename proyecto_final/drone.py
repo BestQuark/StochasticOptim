@@ -111,7 +111,7 @@ class droneEnv(gym.Env):
         x,y = self.state
         matriz[x,y] = 150
         clear_output(wait=True)
-        imag = plt.imshow(matriz, cmap='gray')
+        imag = plt.imshow(matriz, cmap='gray', vmin=-50)
         plt.axis('off')
         plt.show()
     
